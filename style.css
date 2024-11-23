@@ -1,0 +1,89 @@
+/* Reset some basic styles */
+body, h1, h2, label, textarea, input, button {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 0;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, textarea, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0057d9;
+}
+
+#projects-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  background-color: white;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.project h3 {
+  margin: 0;
+}
+
+.project p {
+  font-size: 14px;
+  color: #555;
+}
+
+.project .progress-bar {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  height: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.project .progress {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 5px;
+}

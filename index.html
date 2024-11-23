@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crowdfunding Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Crowdfunding Platform</h1>
+  </header>
+
+  <!-- Project Creation Form -->
+  <section id="create-project-section">
+    <h2>Create a New Project</h2>
+    <form id="project-form">
+      <label for="title">Project Title:</label>
+      <input type="text" id="title" required>
+
+      <label for="description">Description:</label>
+      <textarea id="description" required></textarea>
+
+      <label for="goal">Funding Goal ($):</label>
+      <input type="number" id="goal" required>
+
+      <button type="submit">Create Project</button>
+    </form>
+  </section>
+
+  <!-- List of Projects -->
+  <section id="projects-section">
+    <h2>Projects</h2>
+    <div id="projects-list"></div>
+  </section>
+
+  <!-- Contributions Section -->
+  <section id="contribution-section">
+    <h2>Contribute to a Project</h2>
+    <label for="project-id">Select Project:</label>
+    <select id="project-id">
+      <!-- Projects will be populated here -->
+    </select>
+    <label for="contribution-amount">Contribution Amount ($):</label>
+    <input type="number" id="contribution-amount" required>
+    <button id="contribute-button">Contribute</button>
+  </section>
+
+  <!-- Project Updates Section -->
+  <section id="updates-section">
+    <h2>Project Updates</h2>
+    <label for="update-message">Post an Update:</label>
+    <textarea id="update-message"></textarea>
+    <button id="update-button">Post Update</button>
+    <div id="updates-list"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
